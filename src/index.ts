@@ -1,12 +1,14 @@
-import express from 'express';
+import express, { json } from "express";
+import db from "./config/db";
+import userRoutes from "./routes/index";
 
 const app = express();
-const port = 3000;
+app.use(json());
 
-app.get('/', (req, res) => {
-  res.send('Hello, TypeScript with Express!');
-});
+// Conectar ao MongoDB
+db();
 
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
-});
+// Usar as rotas do usuário
+app.use("/api", userRoutes);
+
+export default app;
