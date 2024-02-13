@@ -1,5 +1,5 @@
-import * as create from "./userController";
+import * as user from "./userController";
 
 export const UserController = {
-  ...create,
+  ...user,
 };
