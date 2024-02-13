@@ -28,6 +28,12 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
    ```bash
    npm install
 
+4. Instale o mongo no docker, conforme arquivo no diretório:
+    ./container/mongo+prisma.txt
+
+5. Instale o postgressql no docker:
+  ./container/ docker-compose up -d
+
 ## Desenvolvimento
 
 Execute o projeto em modo de desenvolvimento:

@@ -1,0 +1,16 @@
+Instalando o mongo no docker
+
+1 - Execute o comando do docker:
+    docker run --name mongo -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME="admin" -e MONGO_INITDB_ROOT_PASSWORD="pass" -d prismagraphql/mongo-single-replica:5.0.3
+
+2 - Crie um dbname:
+    use apiTest
+
+3 - Crie o user com permissão ao dbname:
+    db.createUser({
+        user: "admin",
+        pwd: "pass",
+        roles: [
+            { role: "readWrite", db: "apiTest" }
+        ]
+    })
