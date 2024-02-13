@@ -1,6 +1,6 @@
 # learning_typescript
 
-Um simples projeto de cadastro de usuários utilizando MongoDB, Express e TypeScript.
+Um simples projeto de cadastro de usuários utilizando PostgreSQL, MongoDB, Express e TypeScript.
 
 ## Pré-requisitos
 
@@ -9,18 +9,19 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) (gerenciador de pacotes do Node.js)
 - [MongoDB](https://www.mongodb.com/try/download/community) (certifique-se de ter o MongoDB instalado e em execução)
+- [PostgreSQL](https://www.postgresql.org/download/) (certifique-se de ter o MongoDB instalado e em execução)
 
 ## Configuração
 
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
+   git clone https://github.com/jlennomatias/learning_typescript
 
 2. Navegue até o diretório do projeto:
 
    ```bash
-   cd seu-projeto
+   cd learning_typescript
 
 3. Instale as dependências:
 
@@ -57,13 +58,21 @@ Execute o projeto em modo de desenvolvimento:
     npm start: Inicia o servidor em produção (certifique-se de ter feito o build antes).
     npm run dev: Inicia o servidor em modo de desenvolvimento com suporte a hot-reloading.
 
-## API Endpoints
+## API User Endpoints
 
     POST /api/users: Cria um novo usuário.
     GET /api/users: Retorna a lista de todos os usuários.
     GET /api/users/:id: Retorna os detalhes de um usuário específico.
     PUT /api/users/:id: Atualiza os dados de um usuário.
     DELETE /api/users/:id: Remove um usuário.
+
+## API Customer Endpoints
+
+    POST /api/customers: Cria um novo customer.
+    GET /api/customer: Retorna a lista de todos os customers.
+    GET /api/customer/:id: Retorna os detalhes de um customer específico.
+    PUT /api/customer/:id: Atualiza os dados de um customer.
+    DELETE /api/customer/:id: Remove um customer.
 
 ## Contribuição
 
